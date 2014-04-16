@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+
+    <title>Population Percentage</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="block">
+
+        <div>
+
+            <p>The population percentage plots use a population genetic model to estimate your overall ancestry and put this in context using nearly 4000 people from across the world. The model finds eleven clusters of individuals who are genetically similar to each other, using hundreds of thousands of markers from across the genome. These clusters are also known as ancestry components, as they represent the percentage of DNA each individual has from these inferred ancestral clusters.</p>
+
+            <p>In the plot each cluster or ancestry component is coloured differently to show the different origins of people – the plot is made up of thousands of thin vertical lines or columns representing individuals, each coloured according to the ancestry components of the individual. Some individuals are composed almost entirely from one ancestry component, for example many Han Chinese are over 90% East Asian, while other individuals are of mixed heritage, with ancestry from multiple clusters. Your own population percentage is plotted in the larger column. The eleven ancestry components are described in more detail below. Note that this is a complex analysis and so there is some statistical noise: ancestry components below about 1-3% are potentially not informative.</p>
+
+        </div>
+
+        <div id="PPSelect">
+        </div>
+
+        <div id="canvasPopulationPercentage" data-population-percentage-id="52a0819a939138472f0007da">
+
+            <div id="plotDescription">
+            </div>
+
+        </div>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
+<script src="js/stats.min.js"></script>
+<script src="js/populationPercentage.js"></script>
+
+</body>
+</html>
