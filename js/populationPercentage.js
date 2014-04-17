@@ -49,7 +49,7 @@ select.addEventListener('change', function() {
         // mapItems stuff
         dataload = false;
 
-        $.getJSON('https://api.moffpart.com/api/1/databases/sdnacontent/collections/populationPercentageReference?q={"title":"'+ plotName + '"}&apiKey=50e55b5fe4b00738efa04da0&callback=?', function(ret) {
+        $.getJSON('https://api.moffpart.com/api/1/results/getHaplogroup?q={"title":"'+ plotName + '"}&c=populationPercentageReference&callback=?', function(ret) {
 
             plotItems = ret[0];
             parseData();
@@ -776,7 +776,7 @@ select.addEventListener('change', function() {
 
 var resultid = document.getElementById("canvasPopulationPercentage").getAttribute("data-population-percentage-id");
 
-$.getJSON('https://api.moffpart.com/api/1/databases/sdnacontent/collections/amaPopulationPercentage/'+ resultid +'?apiKey=50e55b5fe4b00738efa04da0&callback=?', function(ret) {
+$.getJSON('https://api.moffpart.com/api/1/results/getAMAResults/'+ resultid +'?c=amaPopulationPercentage&callback=?', function(ret) {
 
     customerItems = ret;
 
