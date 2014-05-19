@@ -1,4 +1,4 @@
-## Global Connections
+## Population Percentages
 
 #### HTML
 The index.html file contains the normal includes for the CSS and Javascript files.
